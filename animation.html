@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Lungs Animation- Slider</title>
+        <link rel="stylesheet" href="style.css" media="screen"/>
+    </head>
+
+    <body>
+        <div class="text">
+            <p>Are You a Smoker? This is How Cigarettes Affects Your Lungs</p>
+        </div>
+
+        <!-- image -->
+        <div class="parent">
+            <img
+                src="./images/background.png"
+                height="500px"
+            />
+        <div class="levels">
+            <img
+                src="./images/lungs.png"
+                height="180px"
+                id="levelone"
+                class="animated rubberBand"
+                alt=""
+            />
+            <img
+                src="./images/lungs2.png"
+                height="180px"
+                id="leveltwo"
+                class="animated rubberBand hidden"
+                alt=""
+            />
+            <img
+                src="./images/lungs3_1.png"
+                height="180px"
+                id="levelthree"
+                class="animated rubberBand hidden"
+                alt=""
+            />
+            <img
+                src="./images/lungs4.png"
+                height="180px"
+                id="levelfour"
+                class="animated rubberBand hidden"
+                alt=""
+            />
+            <img
+                src="./images/lungs5.png"
+                height="180px"
+                id="levelfive"
+                class="animated rubberBand hidden"
+                alt=""
+            />
+            <img
+                src="./images/lungs6.png"
+                height="180px"
+                id="levelsix"
+                class="animated rubberBand hidden"
+                alt=""
+            />
+        </div>
+        </div>
+
+        <!-- slider -->
+        <p><span id="demo"></span> Cigarettes a day</p> 
+        <div class="slidecontainer">
+            <input
+                type="range"
+                min="0"
+                max="5"
+                value="0"
+                class="slider"
+                id="myRange"
+            > 
+        </div>
+        
+        <!-- js -->
+        <script src="animate.js"></script>
+    </body>
+</html>
