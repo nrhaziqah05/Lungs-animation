@@ -9,4 +9,6 @@ slider.oninput=function(){
 
     var tar = this.value * 7;
     document.getElementById("tar-amount").innerHTML = tar;
+
+    document.getElementById("slider-value").innerHTML = this.value;
 }

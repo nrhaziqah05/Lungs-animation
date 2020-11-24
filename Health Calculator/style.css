@@ -1,35 +1,38 @@
-.health-center{
+.health-calculator{
     width: 500px;
     height: 500px;
     margin: 0 auto;
 }
 
-.lung, .cigarette-number {
+.lung-container, .cigarette-number {
     width: 450px;
     /* height: 200px; */
     margin: 20px auto;
     padding: 10px;
 }
 
-.lung{
-    background-color: white;
+.lung-container{
+    background-color: rgba(207, 229, 243, 0.973);
     height: 300px;
 
 }
 
 .cigarette-number{
-    background-color: white;
+    background-color: rgba(207, 229, 243, 0.973);
     height: 100px;
-}
-
-.tar-contains{
-    padding: 10px;
 }
 
 .text{
     /* font-weight: bold; */
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 5px;
+}
+
+.tar-amount{
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .lung-condition{
@@ -45,14 +48,14 @@
 .fas{
     background: #ffb6c1;
     -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(transparent 190px, rgb(63, 61, 61) 190px);
-    -webkit-text-stroke: 4px #000000;
-    background-size: 380px 380px;
+    background-image: -webkit-linear-gradient(transparent 140px, rgb(63, 61, 61) 100px);
+    -webkit-text-stroke: 2px #000000;
+    background-size: 240px 240px;
     -webkit-background-clip: text;
 }
 
 .slider {
-    width: 100%;
+    width: 80%;
     height: 1px;
     -webkit-appearance: none;
     background-color: lightblue;
@@ -64,13 +67,26 @@
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: cornflowerblue;
+    background-color: #7ea3c9;
     outline: none;
     cursor: pointer;
 }
 
 .slider::-webkit-slider-thumb:hover{
-    box-shadow: 0 0 0 3px cornflowerblue,
-                0 0 0 6px white,
-                0 0 0 8px cornflowerblue;
+    box-shadow: 0 0 0 2px #7ea3c9,
+                0 0 0 4px white,
+                0 0 0 6px #7ea3c9;
+}
+
+.slider-value{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: #557ca3;
+    padding: 5px 10px;
+    margin-left: 3px;
 }
