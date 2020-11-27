@@ -1,14 +1,9 @@
-var slider = document.getElementById("range");
-var heart = document.getElementById("icon");
-// var tar = document.getElementById("tar-amount");
+function refresh(){
+    var slider = document.getElementById("range").value;
+    document.getElementById("lung_gradient").setAttribute("y2", .98 - slider / 100);
 
-
-heart.style.backgroundPosition = "0 "+"-"+slider.value+"px";
-slider.oninput=function(){
-    heart.style.backgroundPosition = "0 "+"-"+slider.value+"px";
-
-    var tar = this.value * 7;
+    var tar = slider * 7;
     document.getElementById("tar-amount").innerHTML = tar;
-
-    document.getElementById("slider-value").innerHTML = this.value;
+    
+    document.getElementById("slider-value").innerHTML = slider;
 }
